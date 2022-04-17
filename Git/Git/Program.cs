@@ -11,6 +11,10 @@ namespace Git
                 var line = Console.ReadLine();
                 if (line == "exit" || line == "kraj") 
                     break;
+                string[] expression = line.Split();
+                if (expression.Length == 3) {
+                    Console.WriteLine("Tacno");
+                }
             }
         }
     }
