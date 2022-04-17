@@ -10,7 +10,13 @@ namespace Practice
         }
         static void Main(string[] args)
         {
-            first_method();
+            while (true) {
+                Console.WriteLine("Unesite izraz: ");
+                string s = Console.ReadLine();
+                if (s == "exit") {
+                    break;
+                }
+            }
         }
     }
 }
