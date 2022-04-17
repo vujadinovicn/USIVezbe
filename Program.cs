@@ -10,6 +10,11 @@ namespace Practice
             if (tokens.Length != 3) { throw new Exception("GRESKAAAAA"); }
             return tokens;
         }
+
+        public static int add(int a, int b)
+        {
+            return a + b;
+        }
         static void Main(string[] args)
         {
             while (true) {
@@ -34,6 +39,8 @@ namespace Practice
 
                 int a = Int32.Parse(tokens[0]);
                 int b = Int32.Parse(tokens[2]);
+
+                Console.WriteLine(add(a, b));
             }
         }
     }
