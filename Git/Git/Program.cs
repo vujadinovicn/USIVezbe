@@ -5,6 +5,11 @@ namespace Git
 {
     class Program
     {
+
+        static int addition(int a, int b)
+        {
+            return a + b;
+        }
         static void Main(string[] args)
         {
             while (true) {
@@ -18,7 +23,8 @@ namespace Git
                 }
                 int operand1 = Int32.Parse(expression[0]);
                 int operand2 = Int32.Parse(expression[2]);
-                Console.WriteLine(operand1 + operand2);
+                int result = addition(operand1, operand2);
+                Console.WriteLine(result);
             }
         }
     }
