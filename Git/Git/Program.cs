@@ -9,7 +9,7 @@ namespace Git
         {
             while (true) {
                 var line = Console.ReadLine();
-                if (line == "exit")
+                if (line == "exit" or line == "kraj") 
                     break;
             }
         }
