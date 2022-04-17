@@ -12,9 +12,13 @@ namespace Git
                 if (line == "exit" || line == "kraj") 
                     break;
                 string[] expression = line.Split();
-                if (expression.Length == 3) {
-                    Console.WriteLine("Tacno");
+                if (expression.Length != 3) {
+                    Console.WriteLine("Kraj");
+                    break;
                 }
+                int operand1 = Int32.Parse(expression[0]);
+                int operand2 = Int32.Parse(expression[2]);
+                Console.WriteLine(operand1 + operand2);
             }
         }
     }
