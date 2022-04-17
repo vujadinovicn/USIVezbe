@@ -28,9 +28,12 @@ namespace Practice
                 catch (Exception e) {
                     break;
                 }
-                foreach(var token in tokens) {
+                /*foreach(var token in tokens) {
                     Console.WriteLine(token);
-                }
+                }*/
+
+                int a = Int32.Parse(tokens[0]);
+                int b = Int32.Parse(tokens[2]);
             }
         }
     }
