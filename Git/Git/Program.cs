@@ -7,8 +7,11 @@ namespace Git
     {
         static void Main(string[] args)
         {
-            var line = Console.ReadLine();
-            Console.WriteLine(line);
+            while (true) {
+                var line = Console.ReadLine();
+                if (line == "exit")
+                    break;
+            }
         }
     }
 }
